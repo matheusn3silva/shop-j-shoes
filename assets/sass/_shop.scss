@@ -1,0 +1,142 @@
+.shop-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 56px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  color: $dark-color;
+
+  .text {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  /* SHOES */
+
+  .grid-shoes-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: auto;
+    justify-items: center;
+    gap: 4rem;
+
+    .shoe {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+
+      div.img-shoe {
+        width: 100%;
+        padding: 3.2rem 4.7rem;
+  
+        img {
+          width: 225px;
+        }
+      }
+
+      div.name-shoe {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+
+        h3 {
+          font-size: 1.6rem;
+          font-weight: $weight-500;
+        }
+
+        p {
+          font-size: 1.6rem;
+          color: $brand-color;
+        }
+      }
+
+      div.price-shoe {
+        font-family: 'Space Grotesk', sans-serif;
+        font-size: 2rem;
+        font-weight: $weight-500;
+        color: $dark-color;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .shop-container {  
+    .text {
+      margin: 0 auto;
+      text-align: center;
+  
+      h2 {
+        font-size: 2.4rem;
+      }
+  
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  
+    /* SHOES */
+  
+    .grid-shoes-container {
+      .shoe {
+        div.img-shoe {
+          padding: 3.2rem 5.5rem;
+        }
+  
+        div.name-shoe {
+          h3 {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shop-container {
+    padding: 80px 0;
+    .text {
+      h2 {
+        font-size: 3.2rem;
+        margin-bottom: 2.4rem;
+      }
+  
+      p {
+        font-size: 2.4rem;
+      }
+    }
+  
+    /* SHOES */
+  
+    .grid-shoes-container {
+      .shoe {  
+        div.img-shoe {
+          padding: 3.2rem 7.9rem;
+        }
+  
+        div.name-shoe {  
+          h3 {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+section.home {
+  width: 100%;
+  height: 350px;
+  padding: 0 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../image/wallpaper-mobile.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .home-description {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+
+    .logo-marca {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+
+      span {
+        font-size: 1.8rem;
+        font-weight: $weight-500;
+      }
+    }
+
+    .description {
+      h1 {
+        margin-bottom: 1.2rem;
+        font-size: 2.4rem;
+        font-weight: $weight-500;
+      }
+
+      p {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2.2rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 376px) {
+  section.home {
+    background-image: url('../image/wallpaper-tablet.svg');
+    padding: 0 3.2rem;
+
+    div.home-description {
+      .logo-marca {
+        gap: 0.8rem;
+      }
+  
+      .description {
+        p {
+          font-size: 1.8rem;
+          line-height: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section.home {
+    background-image: url('../image/wallpaper-desktop.svg');
+
+    div.home-description {
+      .logo-marca {
+        gap: 0.8rem;
+
+        img {
+          width: 4.8rem;
+          height: 4.8rem;
+        }
+
+        span {
+          font-size: 2.4rem;
+        }
+      }
+
+      .description {
+        h1 {
+          font-size: 3.2rem;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          max-width: 557px;
+          font-size: 2.4rem;
+          line-height: 3.3rem;
+        }
+      }
+    }
+  }
+}
