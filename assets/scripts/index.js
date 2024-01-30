@@ -9,7 +9,9 @@ const listShoes = [
   descriptionShoe('Air Jordan 1 Mid Dutch Green', 'R$ 1.350,00'),
   descriptionShoe('Air Jordan 1 Mid GS "Light Smoke Grey"', 'R$ 1.585,00'),
   descriptionShoe('Air Jordan 1 Mid SE Bright Citrus', 'R$ 949,99'),
-  descriptionShoe('Air Jordan 1 Mid Grey Camo', 'R$ 999,99')
+  descriptionShoe('Air Jordan 1 Mid Grey Camo', 'R$ 999,99'),
+  descriptionShoe('Air Jordan 1 Mid Gray and White', 'R$ 1385,99'),
+  descriptionShoe('Air Jordan 1 Mid Black and WHite', 'R$ 1299,99')
 ]
 
 function descriptionShoe(name, price) {
