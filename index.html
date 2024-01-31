@@ -16,7 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
       rel="stylesheet"
     />
+    <!-- SCRIPTS ANIMATIONS -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- FAVICON -->
+    <link rel="icon" href="./assets/image/logo-jordan.svg" type="image/x-icon">
     <title>Shop - Jordan Shoes</title>
   </head>
   <body>
@@ -24,11 +28,11 @@
     <main>
       <section class="home">
         <div class="home-description">
-          <div class="logo-marca">
+          <div class="logo-marca scroll1">
             <img src="./assets/image/logo-jordan.svg" alt="Marca Jordan" />
             <span>JordanShoes</span>
           </div>
-          <div class="description">
+          <div class="description scroll2">
             <h1>A melhor loja de Jordan</h1>
             <p>
               O tênis Jordan é fruto de uma velha e forte parceria entre a Nike
@@ -40,7 +44,7 @@
 
       <section class="shop-container">
         <div class="text">
-          <h2>Os melhores em só um lugar</h2>
+          <h2 class="title-shop">Os melhores em só um lugar</h2>
           <p id="typed"></p>
         </div>
 
@@ -64,12 +68,7 @@
     </main>
 
     <script src="./assets/scripts/index.js"></script>
-    <script>
-      var typed = new Typed('#typed', {
-        strings: ['A marca Jordan na JordanShoes é a escolha certa para os amantes de sneakers que buscam estilo e conforto.'],
-        typeSpeed: 30,
-      });
-    </script>
-
+    <script src="./assets/scripts/typedAnimation.js"></script>
+    <script src="./assets/scripts/scrollAnimation.js"></script>
   </body>
 </html>
